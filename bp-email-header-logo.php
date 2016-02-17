@@ -222,7 +222,7 @@ class BP_Email_Logo {
 		$output = '';
 
 		if ( ! empty( $settings['site_icon'] ) ) {
-			$output = sprintf( '<img src="%s" style="vertical-align: top"/>&nbsp', get_site_icon_url( 32, '', bp_get_root_blog_id() ) );
+			$output = sprintf( '<img src="%s" style="vertical-align: top"/>&nbsp;', get_site_icon_url( 32, '', bp_get_root_blog_id() ) );
 		}
 
 		return $output . $site_name;
