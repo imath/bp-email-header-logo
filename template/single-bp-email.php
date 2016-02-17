@@ -116,22 +116,6 @@ $settings = bp_email_get_appearance_settings();
 		}
 	</style>
 
-	<?php if ( function_exists( 'is_customize_preview' ) && is_customize_preview() ) : ?>
-
-		<style>
-			body.wp-customizer-unloading {
-				opacity: 0.25;
-				cursor: progress !important;
-				-webkit-transition: opacity 0.5s;
-				transition: opacity 0.5s;
-			}
-			body.wp-customizer-unloading * {
-				pointer-events: none !important;
-			}
-		</style>
-
-	<?php endif; ?>
-
 </head>
 <body class="email_bg" width="100%" height="100%" bgcolor="<?php echo esc_attr( $settings['email_bg'] ); ?>" style="Margin: 0;">
 <table cellpadding="0" cellspacing="0" border="0" height="100%" width="100%" bgcolor="<?php echo esc_attr( $settings['email_bg'] ); ?>" style="border-collapse:collapse;" class="email_bg"><tr><td valign="top">
